@@ -51,8 +51,8 @@ OutputDebug, % "register succeed"
 
 ;; Binding the game emulator window, and resize it to 1136*640
 
-;hwnd := ts.FindWindow("", "阴阳师-网易游戏")
-hwnd := ts.GetMousePointWindow()
+hwnd := ts.FindWindow("", "阴阳师-网易游戏")
+;hwnd := ts.GetMousePointWindow()
 ts_ret := ts.BindWindow(hwnd,"dx2","windows","windows",0)
 if (ts_ret <> 1){
   msgbox, % "binding failed"
